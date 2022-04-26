@@ -42,7 +42,7 @@ const NewsDetailsContent = (props) => {
                 </ul>
 
                 <iframe
-                  src={`https://www.facebook.com/plugins/like.php?href=https://career-developer.vercel.app/news/${data._id}&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId=662546334827488`}
+                  src={`https://www.facebook.com/plugins/like.php?href=https://icareer.mn/news/${data._id}&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId=662546334827488`}
                   width={174}
                   height={46}
                   style={{ border: "none", overflow: "hidden" }}
