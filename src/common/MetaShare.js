@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
-
+import Helmet from "react-helmet";
 const MetaShare = ({ title, ogTitle, ogDescrtiption, image }) => {
   return (
-    <>
+    <Helmet>
       <meta charSet="utf-8" />
       <title>{title}</title>
       <meta name="robots" content="noindex, follow" />
@@ -19,7 +19,7 @@ const MetaShare = ({ title, ogTitle, ogDescrtiption, image }) => {
         content={`https://novelistgroup.com/upload/${image}`}
       />
       <meta property="fb:app_id" content="662546334827488" />
-    </>
+    </Helmet>
   );
 };
 MetaShare.propTypes = {
