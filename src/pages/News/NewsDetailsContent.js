@@ -2,16 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FiCalendar } from "react-icons/fi";
 import moment from "moment";
-import HeadTags from "./HeadTags";
-const NewsDetailsContent = ({ data }, props) => {
-  const { metaDescription, title, image } = props;
+import MetaShare from "../../common/MetaShare";
+const NewsDetailsContent = (props) => {
+  const { data } = props;
   return (
     <>
-      <HeadTags
-        title={title}
-        metaDescription={metaDescription}
-        image={image}
-      ></HeadTags>
+      <MetaShare
+        title="Шинэ мэдээ"
+        ogTitle={data.title}
+        ogDescrtiption="Medee"
+        image={data.image}
+      />
       <div className="post-page-banner rn-section-gapTop">
         <div className="container">
           <div className="row">
