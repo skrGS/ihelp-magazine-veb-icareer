@@ -20,7 +20,7 @@ const NewsDetails = (props) => {
   }, []);
   return (
     <>
-      <SEO title="Мэдээ" />
+      {/* <SEO title="Мэдээ" /> */}
       <Layout>
         <NewsDetailsContent data={data} />
       </Layout>
