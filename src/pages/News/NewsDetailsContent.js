@@ -20,6 +20,9 @@ const NewsDetailsContent = ({ data }, props) => {
                 <div className="page-title">
                   <h1 className="theme-gradient">{data.title}</h1>
                 </div>
+                <div className="page-title">
+                  <h1 className="theme-gradient">{data.title}</h1>
+                </div>
 
                 <ul className="rn-meta-list">
                   <li>
