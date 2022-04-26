@@ -8,9 +8,9 @@ const NewsDetailsContent = (props) => {
   return (
     <>
       <MetaShare
-        title="Шинэ magazine"
+        title="Мэдээ мэдээлэл"
         ogTitle={data.title}
-        ogDescrtiption="Medee"
+        ogDescrtiption={data.title}
         image={data.image}
       />
       <div className="post-page-banner rn-section-gapTop">

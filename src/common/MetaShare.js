@@ -27,10 +27,10 @@ const MetaShare = ({ title, ogTitle, ogDescrtiption, image }) => {
   );
 };
 MetaShare.propTypes = {
-  title: PropTypes.string,
-  ogTitle: PropTypes.string,
-  ogDescrtiption: PropTypes.string,
-  image: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  ogTitle: PropTypes.string.isRequired,
+  ogDescrtiption: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default MetaShare;
