@@ -8,7 +8,7 @@ const NewsDetailsContent = (props) => {
   return (
     <>
       <MetaShare
-        title="Шинэ мэдээ"
+        title="Шинэ мэдээ!!!!!"
         ogTitle={data.title}
         ogDescrtiption="Medee"
         image={data.image}
