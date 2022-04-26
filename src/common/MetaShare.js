@@ -4,21 +4,25 @@ import Helmet from "react-helmet";
 const MetaShare = ({ title, ogTitle, ogDescrtiption, image }) => {
   return (
     <Helmet>
-      <meta charSet="utf-8" />
       <title>{title}</title>
-      <meta name="robots" content="noindex, follow" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" key="description" content={ogDescrtiption} />
+      <meta name="title" key="title" content={title} />
+      <meta property="og:title" key="og:title" content={ogTitle} />
+      <meta property="og:locale" key="og:locale" content="en_US" />
+      <meta charSet="utf-8" />
+      <meta property="og:type" key="og:type" content="website" />
       <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        property="og:description"
+        key="og:description"
+        content={ogDescrtiption}
       />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content={ogTitle} />
-      <meta property="og:description" content={ogDescrtiption} />
       <meta
         property="og:image"
+        key="og:image"
         content={`https://novelistgroup.com/upload/${image}`}
       />
-      <meta property="fb:app_id" content="662546334827488" />
     </Helmet>
   );
 };
